@@ -1,0 +1,140 @@
+/* styling/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; 
+    color: #fff; 
+    text-align: center;
+}
+
+.container {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1f1f1f;  
+    border-radius: 10px;
+    animation: shadowAnimation 4s infinite linear; /* Adjusted animation timing */
+}
+
+@keyframes shadowAnimation {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), 0 0 10px rgba(0, 255, 0, 0.5), 0 0 10px rgba(0, 0, 255, 0.5); /* Initial shadow colors */
+    }
+    6.25% {
+        box-shadow: 0 0 12px rgba(255, 0, 0, 0.55), 0 0 12px rgba(0, 255, 0, 0.55), 0 0 12px rgba(0, 0, 255, 0.55); /* Slightly increased shadow size */
+    }
+    12.5% {
+        box-shadow: 0 0 14px rgba(255, 0, 0, 0.6), 0 0 14px rgba(0, 255, 0, 0.6), 0 0 14px rgba(0, 0, 255, 0.6); /* Further increased shadow size */
+    }
+    18.75% {
+        box-shadow: 0 0 16px rgba(255, 0, 0, 0.65), 0 0 16px rgba(0, 255, 0, 0.65), 0 0 16px rgba(0, 0, 255, 0.65); /* Further increased shadow size */
+    }
+    25% {
+        box-shadow: 0 0 18px rgba(255, 0, 0, 0.7), 0 0 18px rgba(0, 255, 0, 0.7), 0 0 18px rgba(0, 0, 255, 0.7); /* Further increased shadow size */
+    }
+    31.25% {
+        box-shadow: 0 0 16px rgba(255, 0, 0, 0.65), 0 0 16px rgba(0, 255, 0, 0.65), 0 0 16px rgba(0, 0, 255, 0.65); /* Decreased shadow size */
+    }
+    37.5% {
+        box-shadow: 0 0 14px rgba(255, 0, 0, 0.6), 0 0 14px rgba(0, 255, 0, 0.6), 0 0 14px rgba(0, 0, 255, 0.6); /* Decreased shadow size */
+    }
+    43.75% {
+        box-shadow: 0 0 12px rgba(255, 0, 0, 0.55), 0 0 12px rgba(0, 255, 0, 0.55), 0 0 12px rgba(0, 0, 255, 0.55); /* Slightly decreased shadow size */
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), 0 0 10px rgba(0, 255, 0, 0.5), 0 0 10px rgba(0, 0, 255, 0.5); /* Return to original shadow size */
+    }
+    56.25% {
+        box-shadow: 0 0 12px rgba(255, 0, 0, 0.55), 0 0 12px rgba(0, 255, 0, 0.55), 0 0 12px rgba(0, 0, 255, 0.55); /* Slightly increased shadow size */
+    }
+    62.5% {
+        box-shadow: 0 0 14px rgba(255, 0, 0, 0.6), 0 0 14px rgba(0, 255, 0, 0.6), 0 0 14px rgba(0, 0, 255, 0.6); /* Further increased shadow size */
+    }
+    68.75% {
+        box-shadow: 0 0 16px rgba(255, 0, 0, 0.65), 0 0 16px rgba(0, 255, 0, 0.65), 0 0 16px rgba(0, 0, 255, 0.65); /* Further increased shadow size */
+    }
+    75% {
+        box-shadow: 0 0 18px rgba(255, 0, 0, 0.7), 0 0 18px rgba(0, 255, 0, 0.7), 0 0 18px rgba(0, 0, 255, 0.7); /* Further increased shadow size */
+    }
+    81.25% {
+        box-shadow: 0 0 16px rgba(255, 0, 0, 0.65), 0 0 16px rgba(0, 255, 0, 0.65), 0 0 16px rgba(0, 0, 255, 0.65); /* Decreased shadow size */
+    }
+    87.5% {
+        box-shadow: 0 0 14px rgba(255, 0, 0, 0.6), 0 0 14px rgba(0, 255, 0, 0.6), 0 0 14px rgba(0, 0, 255, 0.6); /* Decreased shadow size */
+    }
+    93.75% {
+        box-shadow: 0 0 12px rgba(255, 0, 0, 0.55), 0 0 12px rgba(0, 255, 0, 0.55), 0 0 12px rgba(0, 0, 255, 0.55); /* Slightly decreased shadow size */
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), 0 0 10px rgba(0, 255, 0, 0.5), 0 0 10px rgba(0, 0, 255, 0.5); /* Return to original shadow size */
+    }
+}
+.header img {
+    width: 100%;  
+    max-height: 300px;  
+    object-fit: cover; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.header h1 {
+    margin-top: 20px; 
+    font-size: 48px;  
+    opacity: 0;  
+    background: linear-gradient(45deg, #ff00dd, #3d0061, #1900ff);  
+    -webkit-background-clip: text;  
+    background-clip: text;  
+    color: transparent;  
+    animation: slideIn 1s ease-in-out forwards; 
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0; 
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 10px; /* Adjusted margin */
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    display: inline-block;
+    padding: 8px 16px; /* Adjusted padding */
+    background-color: #49008d;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px; /* Adjusted border-radius */
+    font-size: 14px; /* Adjusted font-size */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-links li a:hover {
+    background-color: #0056b3;
+}
+
+.nav-links li a:focus {
+    outline: none;
+}
+
+.nav-links li a:active {
+    transform: scale(0.95);
+}
+
