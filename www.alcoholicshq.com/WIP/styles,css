@@ -1,0 +1,26 @@
+/* styles.css */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.seats {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.seat {
+    margin: 0 10px;
+}
+
+.seat input {
+    width: 100px;
+}
+
+.game-area {
+    border: 2px solid #000;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
