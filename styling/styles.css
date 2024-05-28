@@ -1,91 +1,123 @@
-/* Reset styles */
-* {
-    margin: 0;
-    padding: 0;
+:root {
+    --background-color: #20232a;
+    --primary-color: #61dafb;
+    --secondary-color: #282c34;
+    --text-color: #abb2bf;
+    --hover-color: #21a1f1;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+*,
+::before,
+::after {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212; /* Dark background */
-    color: #fff; /* White text */
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 .navbar {
-    background-color: #333;
-    overflow: hidden;
-}
-
-.navbar .container {
-    max-width: 100%; /* Adjust container width to 100% */
-    margin: 0 auto;
-    padding: 0 10px; /* Adjust padding for smaller screens */
+    background-color: var(--secondary-color);
+    padding: 10px 0;
+    overflow-x: auto;
 }
 
 .nav-links {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    flex-wrap: wrap; /* Allow flex items to wrap */
-    justify-content: center; /* Center-align flex items */
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links li {
-    margin-right: 10px; /* Adjust margin between items */
-    margin-bottom: 10px; /* Add bottom margin to separate rows on smaller screens */
+    margin: 0 5px;
 }
 
 .nav-links .button {
     text-decoration: none;
-    color: white;
-    display: flex; /* Use flexbox */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    color: var(--primary-color);
     padding: 10px 20px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-.nav-links .button:hover {
-    background-color: #555;
+.nav-links .button:hover,
+.nav-links .button:focus {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transform: translateY(-3px);
 }
 
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-    .nav-links li {
-        margin-right: 0; /* Remove right margin for smaller screens */
-        margin-bottom: 10px; /* Add bottom margin to separate rows */
-        width: 100%; /* Make items full width */
-    }
-
-    .nav-links .button {
-        padding: 10px; /* Reset padding for smaller screens */
-    }
+.nav-links .button i {
+    margin-right: 8px;
 }
+
 .header {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
-.header h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.header p {
-    font-size: 18px;
-}
-
-.header img {
+.header-img {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+header h1 {
+    font-size: 2.25rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.125rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        margin-top: 20px;
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-links .button {
+        padding: 8px 16px;
+    }
+
+    .header {
+        margin-top: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.875rem;
+    }
 }
