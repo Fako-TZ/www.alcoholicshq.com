@@ -1,0 +1,123 @@
+:root {
+    --background-color: #20232a;
+    --primary-color: #61dafb;
+    --secondary-color: #282c34;
+    --text-color: #abb2bf;
+    --hover-color: #21a1f1;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: var(--secondary-color);
+    padding: 10px 0;
+    overflow-x: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 5px;
+}
+
+.nav-links .button {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.nav-links .button:hover,
+.nav-links .button:focus {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+.nav-links .button i {
+    margin-right: 8px;
+}
+
+.header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.header-img {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+header h1 {
+    font-size: 2.25rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.125rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        margin-top: 20px;
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-links .button {
+        padding: 8px 16px;
+    }
+
+    .header {
+        margin-top: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.875rem;
+    }
+}

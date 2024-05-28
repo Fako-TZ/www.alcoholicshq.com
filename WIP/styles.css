@@ -1,0 +1,123 @@
+:root {
+    --background-color: #20232a;
+    --primary-color: #61dafb;
+    --secondary-color: #282c34;
+    --text-color: #abb2bf;
+    --hover-color: #21a1f1;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.contributors-section {
+    margin-top: 20px;
+}
+
+.contributors-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contributors-list li {
+    margin-bottom: 20px;
+}
+
+.contributor-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contributor-details h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.role {
+    font-size: 16px;
+    color: var(--text-color);
+    margin: 5px 0;
+}
+
+.assets-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.assets-button:hover,
+.assets-button:focus {
+    background-color: var(--hover-color);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: none;
+    }
+
+    .profile-picture {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .contributor-details h3 {
+        font-size: 18px;
+    }
+
+    .role {
+        font-size: 14px;
+    }
+
+    .assets-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
