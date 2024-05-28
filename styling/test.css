@@ -1,9 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212; /* Dark background */
-    color: #fff; /* White text */
-  }
-/* Scope styles to only apply to elements within the ComingSoonPage component */
+    background-color: #121212;
+    color: #fff;
+}
+
 .section-title {
     font-size: 24px;
     font-weight: 700;
@@ -11,13 +11,14 @@ body {
     color: #333;
     text-align: center;
 }
+
 .contributors-list {
     list-style-type: none;
     padding: 0;
 }
 
 .contributors-list li {
-    margin-bottom: 20px; /* Add bottom margin between list items */
+    margin-bottom: 20px;
 }
 
 .coming-soon-container {
@@ -87,7 +88,6 @@ body {
     background-color: #0056b3;
 }
 
-/* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
     .coming-soon-container {
         padding: 10px;
