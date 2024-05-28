@@ -4,152 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helpers</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212; /* Dark background */
-            color: #fff; /* White text */
-        }
-        /* Scope styles to only apply to elements within the ComingSoonPage component */
-        .section-title {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: #333;
-            text-align: center;
-        }
-        .contributors-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .contributors-list li {
-            margin-bottom: 20px; /* Add bottom margin between list items */
-        }
-        .coming-soon-container {
-            max-width: 90%;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-            background-color: #1e1e1e;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-        .contributors-section {
-            margin-top: 20px;
-        }
-        .contributors-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .contributors-list li {
-            margin-bottom: 10px;
-        }
-        .contributor-info {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .profile-picture {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-        .contributor-details {
-            text-align: left;
-        }
-        .contributor-details h3 {
-            font-size: 20px;
-            margin-bottom: 0px;
-            color: #fff;
-        }
-        .role {
-            font-size: 14px;
-            margin-top: 5px;
-            color: #ddd;
-        }
-        .assets-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .assets-button:hover {
-            background-color: #0056b3;
-        }
-        /* Media queries for responsiveness */
-        @media screen and (max-width: 768px) {
-            .coming-soon-container {
-                padding: 10px;
-                border-radius: 5px;
-                box-shadow: none;
-            }
-            .profile-picture {
-                width: 60px;
-                height: 60px;
-                margin-right: 5px;
-            }
-            .contributor-details h3 {
-                font-size: 16px;
-            }
-            .role {
-                font-size: 12px;
-            }
-            .assets-button {
-                padding: 8px 16px;
-                font-size: 14px;
-            }
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/A.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <h1 class="section-title">Thanks to these people for making alcoholcs what it is</h1>
-        <div class="coming-soon-container">
-            <!-- Section for thanking contributors -->
-            <div class="contributors-section">
-                <ul class="contributors-list">
-                    <li>
-                        <div class="contributor-info">
-                            <img src="https://public-files.gumroad.com/xunluzal9jijg469j9mfaxxahugz" alt="Aztrax PFP" class="profile-picture" />
-                            <div class="contributor-details">
-                                <h3>Aztrax</h3>
-                                <p class="role">Asset Creator</p>
-                                <a href="https://aztrax.gumroad.com/" class="assets-button" target="_blank" rel="noopener noreferrer">View Store</a>
-                            </div>
+    <header>
+        <h1 class="section-title">Thanks to these people for Making/Testing</h1>
+    </header>
+    <main>
+        <section class="contributors-section">
+            <ul class="contributors-list">
+                <li>
+                    <div class="contributor-info">
+                        <img src="https://public-files.gumroad.com/xunluzal9jijg469j9mfaxxahugz" alt="Aztrax profile picture" class="profile-picture" />
+                        <div class="contributor-details">
+                            <h3>Aztrax</h3>
+                            <p class="role">Asset Creator</p>
+                            <a href="https://aztrax.gumroad.com/" class="assets-button" target="_blank" rel="noopener noreferrer">View Store</a>
                         </div>
-                    </li>
-                    <!-- Add margin to create spacing between contributors -->
-                    <li style="margin-bottom: 20px;">
-                        <div class="contributor-info">
+                    </div>
+                </li>
+                <li>
+                    <div class="contributor-info">
+                        <img src="https://cdn.discordapp.com/attachments/1209042842467704843/1241515811818967100/VRChat_2024-05-11_22-15-26.334_2560x1440.png?ex=66550733&is=6653b5b3&hm=e534faae789fe7c6749600170d17dbc971f152d27adc359addd6be03a97cec18&" alt="Raven profile picture" class="profile-picture" />
+                        <div class="contributor-details">
+                            <h3>Raven</h3>
+                            <p class="role">Tester</p>
+                            <a href="https://www.twitch.tv/ravenytl" class="assets-button" target="_blank" rel="noopener noreferrer">Twitch</a>
                         </div>
-                    </li>
-                    <li style="margin-bottom: 20px;">
-                        <div class="contributor-info">
-                        </div>
-                    </li>
-                    <li style="margin-bottom: 20px;">
-                        <div class="contributor-info">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contributor-info">
-                            <img src="https://cdn.discordapp.com/attachments/1209042842467704843/1241515811818967100/VRChat_2024-05-11_22-15-26.334_2560x1440.png?ex=664e6fb3&is=664d1e33&hm=a57ae160e2cdaaf6f6319948d3a22c1eebf179642b4165cc3d5acb38ccfb3fc7&" alt="Raven PFP" class="profile-picture" />
-                            <div class="contributor-details">
-                                <h3>Raven</h3>
-                                <p class="role">Tester</p>
-                                <a href="https://www.twitch.tv/ravenytl" class="assets-button" target="_blank" rel="noopener noreferrer">Twitch</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
