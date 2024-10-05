@@ -1,7 +1,7 @@
 /*.*/
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #151529;
+    background-color: #171E3D;
     color: #e0e0e0;
     margin: 0;
     padding: 0;
@@ -95,7 +95,7 @@ p {
 }
 
 h3 {
-    color: #073c6b;
+    color: #808080;
     margin-bottom: 15px;
 }
 
@@ -208,7 +208,7 @@ ul li {
 }
 
 .download-item h4 {
-    color: #41a6ff;
+    color: #808080;
     margin-bottom: 15px;
     font-size: 1.5rem;
 }
