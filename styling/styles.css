@@ -1,6 +1,7 @@
+/*.*/
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #1a1a1a;
+    background-color: #18182d;
     color: #e0e0e0;
     margin: 0;
     padding: 0;
@@ -15,7 +16,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(135deg, #234549, #143035);
+    background: linear-gradient(135deg, #252646, #143035);
     padding: 60px 20px;
     text-align: center;
     border-radius: 15px;
@@ -51,6 +52,7 @@ p {
 }
 
 .feature-card {
+    
     background: #252525;
     padding: 30px;
     border-radius: 15px;
@@ -59,7 +61,33 @@ p {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
     min-width: 250px;
+    
 }
+
+.download-card 
+{
+    
+    background: #252525;
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-width: 250px;
+    
+}
+
+.highlight-link {
+    color: #4400ff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.highlight-link:hover {
+    color: #3399ff;
+}
+
 
 .feature-card:hover {
     transform: translateY(-10px);
@@ -137,4 +165,72 @@ ul li {
     to {
         opacity: 1;
     }
+}
+
+
+
+/*ZeroEngine Downloads Styling is here.*/
+.download {
+    text-align: center;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    max-width: 85%;
+}
+
+.download-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px; 
+    margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+    .download-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.download-item {
+    background: #252525;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.download-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.download-item h4 {
+    color: #00bcd4;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.download-item p {
+    font-weight: 300;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.download-item .button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 20px;
+    background-color: #025d69;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-item .button:hover {
+    background-color: #003842;
+    transform: translateY(-5px);
 }
